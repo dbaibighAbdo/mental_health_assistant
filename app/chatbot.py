@@ -1,14 +1,3 @@
-"""
-Enhanced Mental Health Chatbot with LangGraph and Streamlit
-Features:
-- Emotion detection and classification
-- Context-aware responses
-- Conversation history with memory
-- Professional UI with Streamlit
-- Error handling and logging
-- Session persistence
-"""
-
 from langgraph.graph import END, MessagesState, START, StateGraph
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langgraph.checkpoint.memory import MemorySaver
@@ -40,7 +29,7 @@ class MentalHealthChatbot:
     
     def __init__(self):
         """Initialize models and workflow"""
-        self.chat_model_id = "Qwen/Qwen2.5-3B-Instruct"
+        self.chat_model_id = "dbaibighAbdo/mental_health_finetuned_qwen2.5_3b_instruct"
         self.classification_model_id = "dbaibighAbdo/mental_health_robertaL_tc"
         
         logger.info("Initializing chatbot models...")

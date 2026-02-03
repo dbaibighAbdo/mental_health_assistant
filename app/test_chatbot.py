@@ -1,8 +1,3 @@
-"""
-Test suite for Mental Health Chatbot
-Run this script to test basic functionality before using the full interface
-"""
-
 import sys
 import logging
 from datetime import datetime
@@ -53,7 +48,7 @@ def test_chatbot_initialization():
     logger.info("Testing chatbot initialization...")
     
     try:
-        from enhanced_chatbot import MentalHealthChatbot
+        from app.chatbot import MentalHealthChatbot
         
         logger.info("Creating chatbot instance (this may take a while)...")
         chatbot = MentalHealthChatbot()

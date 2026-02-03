@@ -1,11 +1,5 @@
-"""
-Streamlit Interface for Enhanced Mental Health Chatbot
-A professional, user-friendly web interface with conversation history,
-emotion tracking, and crisis resources.
-"""
-
 import streamlit as st
-from enhanced_chatbot import MentalHealthChatbot
+from app.chatbot import MentalHealthChatbot
 import time
 from datetime import datetime
 import pandas as pd
