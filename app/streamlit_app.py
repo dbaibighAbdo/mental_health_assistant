@@ -1,5 +1,5 @@
 import streamlit as st
-from app.chatbot import MentalHealthChatbot
+from chatbot import MentalHealthChatbot
 import time
 from datetime import datetime
 import pandas as pd
